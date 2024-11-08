@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/main_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignUpActivity">
+
+
+    <ImageView
+        android:id="@+id/su_back_btn"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/ic_back"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/su_first_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/su_first_txt" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:id="@+id/su_first_txt"
+        android:textColor="@color/main_blue"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a new account"
+        android:textColor="#6b6b6b"
+        android:id="@+id/su_second_txt"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintStart_toStartOf="@+id/su_first_txt"
+        app:layout_constraintEnd_toEndOf="@+id/su_first_txt"
+        app:layout_constraintTop_toBottomOf="@+id/su_first_txt"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#cccccc"
+        android:id="@+id/su_first_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/su_second_txt"
+        android:layout_marginTop="@dimen/_13sdp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lg_third_layout"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/su_sign_up"
+        app:layout_constraintEnd_toEndOf="@+id/su_sign_up"
+        app:layout_constraintTop_toBottomOf="@+id/su_first_view">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/edit_text_extra_text_color"
+            android:text="Username"
+            android:layout_marginBottom="@dimen/_8sdp"/>
+
+        <EditText
+            android:id="@+id/su_user_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_edit_txt_view"
+            android:textColor="@color/edit_text_color"
+            android:textSize="@dimen/_14sdp"
+            android:hint="Enter your name"
+            android:textColorHint="@color/edit_text_hint_color"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:padding="@dimen/_11sdp"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/edit_text_extra_text_color"
+            android:text="Email"
+            android:layout_marginBottom="@dimen/_8sdp"/>
+
+        <EditText
+            android:id="@+id/su_email_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_edit_txt_view"
+            android:textColor="@color/edit_text_color"
+            android:textSize="@dimen/_14sdp"
+            android:hint="Enter your email"
+            android:textColorHint="@color/edit_text_hint_color"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:padding="@dimen/_11sdp"
+            android:inputType="textEmailAddress"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/edit_text_extra_text_color"
+            android:text="Password"
+            android:layout_marginBottom="@dimen/_8sdp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <EditText
+                android:id="@+id/su_password_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_edit_txt_view"
+                android:textColor="@color/edit_text_color"
+                android:textSize="@dimen/_14sdp"
+                android:hint="Enter password"
+                android:textColorHint="@color/edit_text_hint_color"
+                android:padding="@dimen/_11sdp"
+                android:inputType="textPassword"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_eye_off"
+                android:id="@+id/su_pass_btn"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:tint="@color/edit_text_icon_color" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/edit_text_extra_text_color"
+            android:text="Confirm Password"
+            android:layout_marginBottom="@dimen/_8sdp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/su_conf_password_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_edit_txt_view"
+                android:textColor="@color/edit_text_color"
+                android:textSize="@dimen/_14sdp"
+                android:hint="Enter confirm password"
+                android:textColorHint="@color/edit_text_hint_color"
+                android:padding="@dimen/_11sdp"
+                android:inputType="textPassword"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_eye_off"
+                android:id="@+id/su_conf_pass_btn"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:tint="@color/edit_text_icon_color" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/su_sign_up"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/st_login_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/su_third_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:textColor="#fff"
+            android:textSize="@dimen/_13sdp"
+            android:text="SIGN UP"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/su_third_layout"
+        android:layout_marginBottom="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account ?"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/su_sign_in"
+            android:textColor="@color/main_blue"
+            android:padding="@dimen/_3sdp"
+            android:text="Sign in"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textSize="@dimen/_12sdp"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

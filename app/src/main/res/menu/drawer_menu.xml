@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+<!--    <item-->
+<!--        android:id="@+id/draw_nav_home"-->
+<!--        android:title="Home" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/draw_nav_subscription"-->
+<!--        android:title="My Subscription" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/draw_nav_customer"-->
+<!--        android:title="Customer">-->
+
+<!--        <menu>-->
+
+<!--            <item-->
+<!--                android:id="@+id/draw_nav_add_customer"-->
+<!--                android:title="Add Customer" />-->
+
+<!--            <item-->
+<!--                android:id="@+id/draw_nav_manage_customer"-->
+<!--                android:title="Manage Customer" />-->
+
+<!--        </menu>-->
+
+<!--    </item>-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_customer"-->
+<!--        android:title="Project" >-->
+
+<!--        <menu >-->
+<!--            <item android:title=""/>-->
+<!--        </menu>-->
+
+<!--    </item>-->
+
+
+<!--    <item-->
+<!--        android:id="@+id/nav_customer"-->
+<!--        android:title="Follow Up" />-->
+<!--    <item-->
+<!--        android:id="@+id/nav_customer"-->
+<!--        android:title="Report" />-->
+
+
+<!--    <item-->
+<!--        android:id="@+id/draw_nav_customer"-->
+<!--        android:title="SMS">-->
+
+<!--        <menu>-->
+
+<!--            <item-->
+<!--                android:id="@+id/draw_nav_add_customer"-->
+<!--                android:title="Instant SMS" />-->
+
+<!--            <item-->
+<!--                android:id="@+id/draw_nav_manage_customer"-->
+<!--                android:title="Send Bulk SMS" />-->
+
+<!--        </menu>-->
+
+<!--    </item>-->
+
+<!--    <item-->
+<!--        android:id="@+id/draw_nav_user_manage"-->
+<!--        android:title="User Management">-->
+
+<!--        <menu>-->
+
+<!--            <item-->
+<!--                android:id="@+id/draw_nav_all_user"-->
+<!--                android:title="All Users" />-->
+
+<!--        </menu>-->
+
+<!--    </item>-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_about"-->
+<!--        android:title="About Us">-->
+
+<!--        <menu>-->
+<!--            <item android:title="Logout" />-->
+<!--        </menu>-->
+
+<!--    </item>-->
+
+</menu>

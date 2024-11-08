@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dc_refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.DetailData.DetailCustomerFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TableLayout
+                    android:id="@+id/dc_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_project_name_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Project Name" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_project_name_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_surname_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Surname" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_surname_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_fname_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="First Name" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_fname_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_lname_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Last Name" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_lname_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_date_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_date_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_6sdp"
+                            android:text=""
+                            android:textColor="#000"
+                            android:textSize="@dimen/_11ssp" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_city_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="City" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_city_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_bhk_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BHK" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_bhk_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_mobile_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_mobile_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_whatsapp_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WhatsApp" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_whatsapp_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_remarks_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remarks" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_remarks_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_budget_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Budget" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_budget_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_positive_index_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Positive Index" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_positive_index_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_status_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_status_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_type_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Type" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_type_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_ref_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reference" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_ref_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_home_landmark_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Home Landmark" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_home_landmark_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_internal_landmark_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Internal Landmark" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_internal_landmark_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_address_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Address" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_address_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_profession_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Profession" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_profession_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/dc_tab_fo_count_label"
+                            style="@style/TableLabelTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FO Count" />
+
+                        <TextView
+                            android:id="@+id/dc_tab_fo_count_value"
+                            style="@style/TableDataTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dc_edit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_blue">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:text="Edit"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_13ssp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dc_delete_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F44336">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:text="Delete"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_13ssp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
